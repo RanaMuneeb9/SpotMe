@@ -68,15 +68,6 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:gravity="center"
-            android:text="No new requests found"
-            android:textSize="20dp" />
-
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
@@ -88,6 +79,7 @@
         android:layout_marginTop="@dimen/spacing_20dp"
         android:layout_marginEnd="@dimen/spacing_20dp"
         android:layout_marginBottom="20dp"
+        android:visibility="gone"
         app:cardBackgroundColor="@color/com_facebook_blue"
         app:cardCornerRadius="11dp"
         app:cardElevation="2dp">
@@ -131,5 +123,17 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="@color/com_facebook_blue"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
 
 </RelativeLayout>
