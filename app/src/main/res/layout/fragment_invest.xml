@@ -61,10 +61,31 @@
             android:textColor="@color/com_smart_login_code"
             android:textSize="20sp" />
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <include
+                    layout="@layout/row_explore_business"/>
+                <include
+                    layout="@layout/row_explore_business"/>
+                <include
+                    layout="@layout/row_explore_business"/>
+                <include
+                    layout="@layout/row_explore_business"/>
+
+            </LinearLayout>
+        </ScrollView>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:visibility="gone">
 
         </androidx.recyclerview.widget.RecyclerView>
 
